@@ -7,6 +7,8 @@ class CompraController {
         this._valor = $("#valor");
 
         this._compras = new CompraService();
+        this._compraView = new CompraView('#compra-table');
+        this._compraView.update(this._compras);
     }
 
     _criarCompra() {
@@ -27,6 +29,7 @@ class CompraController {
     adiciona(evento) {
         evento.preventDefault();
         this._compras.adiciona(this._criarCompra());
+        this._compraView.update(this._compras)
         this._limpaFormulario();
         $("#compraModal").modal('hide');
     }

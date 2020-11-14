@@ -6,4 +6,8 @@ class CompraService {
     adiciona(compra) {
         this._compras.push(compra);
     }
+
+    paraArray() {
+        return [].concat(this._compras);
+    }
 }
