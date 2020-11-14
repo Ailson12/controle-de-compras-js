@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('tabela.css');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    top: 92%
+}
+
+.azul-escuro {
+    background-color: #009879; 
+}
+
+.fundo-acoes:hover {
+    background-color: #cbbcbc8f;
+}
