@@ -1,3 +1,6 @@
+const seletor = document.querySelector.bind(document);
+
 const controller = new CompraController();
 
-document.querySelector('.form').addEventListener('submit', controller.adiciona.bind(controller));
+seletor('#valor').addEventListener('change', Maskara.dinheiroMask);
+seletor('.form').addEventListener('submit', controller.adiciona.bind(controller));

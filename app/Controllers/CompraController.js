@@ -15,7 +15,7 @@ class CompraController {
         return new Compra(
             this._descricao.value,
             parseInt(this._quantidade.value),
-            parseFloat(this._valor.value)
+            parseFloat(this._valor.value).toFixed(2)
         );
     }
 

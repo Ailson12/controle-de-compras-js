@@ -25,7 +25,7 @@ class CompraView {
                     : 
                     model.paraArray().map(compra => {
                         return `<tr>
-                            '<td>
+                            <td>
                                 <div class="dropdown">
                                     <button class="btn text-white dropdown-toggle azul-escuro" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Ação
