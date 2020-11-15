@@ -32,5 +32,6 @@ class CompraController {
         this._compraView.update(this._compras)
         this._limpaFormulario();
         $("#compraModal").modal('hide');
+        Alert.template('Compra cadastrada com sucesso!');
     }
 }
