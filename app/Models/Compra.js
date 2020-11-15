@@ -13,6 +13,6 @@ class Compra {
     }
 
     get valor() {
-        return this._valor;
+        return this._valor.replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.");
     }
 }
