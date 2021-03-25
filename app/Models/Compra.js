@@ -1,4 +1,4 @@
-class Compra {
+export default class Compra {
     constructor(_descricao, _quantidade, _valor) {
         Object.assign(this, { _descricao, _quantidade, _valor });
         Object.freeze(this);

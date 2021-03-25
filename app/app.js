@@ -1,4 +1,6 @@
-const seletor = document.querySelector.bind(document);
+import seletor from "./uteis/Seletor.js";
+import Loader from "./uteis/Loader.js"
+import CompraController from "./Controllers/CompraController.js";
 
 seletor('body').addEventListener('onload', Loader.load());
 

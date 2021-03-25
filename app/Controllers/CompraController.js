@@ -1,10 +1,13 @@
-class CompraController {
+import CompraService from "../Services/CompraService.js";
+import CompraView from "../Views/compra/CompraView.js";
+import Compra from "../Models/Compra.js";
+import Alert from "../Views/alert/Alert.js";
+import seletor from "../uteis/Seletor.js";
+export default class CompraController {
     constructor() {
-        let $ = document.querySelector.bind(document);
-
-        this._descricao = $("#descricao");
-        this._quantidade = $("#quantidade");
-        this._valor = $("#valor");
+        this._descricao = seletor("#descricao");
+        this._quantidade = seletor("#quantidade");
+        this._valor = seletor("#valor");
 
         this._compras = new CompraService();
         this._compraView = new CompraView('#compra-table');

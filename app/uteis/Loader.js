@@ -1,4 +1,5 @@
-class Loader {
+import seletor from "./Seletor.js";
+export default class Loader {
   static load(ativar = false) {
     if (ativar) {
       seletor('#loader').classList.remove('esconder');

@@ -1,4 +1,4 @@
-class CompraView {
+export default class CompraView {
     constructor(elemento) {
         this._elemento = document.querySelector(elemento);
     }

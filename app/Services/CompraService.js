@@ -1,4 +1,4 @@
-class CompraService {
+export default class CompraService {
     constructor() {
         this._compras = [];
     }
